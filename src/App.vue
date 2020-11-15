@@ -1,19 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <ConditionalRendering /> -->
+    <!-- <ListRendering /> -->
+    <Parent />
+    <Child />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import ConditionalRendering from "./components/ConditionalRendering.vue";
+// import ListRendering from "./components/ListRendering";
+import Child from "./components/Child";
+import Parent from "./components/Parent";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    // ConditionalRendering,
+    // ListRendering,
+    Parent,
+    Child,
+  },
+};
 </script>
 
 <style>
